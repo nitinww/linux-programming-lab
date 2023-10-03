@@ -1,10 +1,10 @@
 echo enter number of files
 read n
+echo enter word
+read word
 for ((i = 1; i <= $n; i++)); do
 	echo enter file name
 	read file
-	echo enter word
-	read word
 	echo file before removing $word:
 	cat $file
 	grep -v -i $word $file > test
